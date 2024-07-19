@@ -20,11 +20,11 @@ public class LinkedListFruta {
         return ultimoMenor;
     }
 
-
     public Produto getProduto(int index){
         if (index < 0 || index >= count) {
             throw new IndexOutOfBoundsException("Índice inválido");
         }
+
         int aux = 0;
         Produto auxProduto = head;
         while(aux != index){
@@ -57,11 +57,9 @@ public class LinkedListFruta {
                 return true;
             }
             auxProduto = auxProduto.getNext();
-            
         }
         System.out.println("Não existe");
         return false;
-
     }
 
     public void add(String nome, int quantidade){
