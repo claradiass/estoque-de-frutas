@@ -55,7 +55,7 @@ public class Main {
                     break;
                 case 5:
                     System.out.println("Saindo do sistema...");
-                    break;
+                    break; 
                 default:
                     System.out.println("Opção inválida.");
                     break;

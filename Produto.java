@@ -6,6 +6,7 @@ public class Produto {
     public Produto(String nome, int quantidade) {
         this.nome = nome;
         this.quantidade = quantidade;
+        this.next = null;
     }
 
     public String getNome() {
