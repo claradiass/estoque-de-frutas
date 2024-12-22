@@ -26,6 +26,7 @@ public class Main {
                 
                     lista.add(nome, quantidade);
                     break;
+
                 case 2:
                     lista.listar();
                     break;
@@ -46,6 +47,7 @@ public class Main {
                         System.out.println("A lista está vazia.");
                     }
                     break;
+
                 case 4:
                     scanner.nextLine(); 
                     System.out.print("Adicione uma fruta para pesquisar: ");
@@ -53,9 +55,15 @@ public class Main {
 
                     lista.checar(nome2);
                     break;
+
                 case 5:
                     System.out.println("Saindo do sistema...");
+<<<<<<< HEAD
                     break; 
+=======
+                    break;
+                    
+>>>>>>> b4cebeb96fabf8d7a0c2ea2a1b52839e94178a31
                 default:
                     System.out.println("Opção inválida.");
                     break;
@@ -73,7 +81,6 @@ public class Main {
         System.out.println("5. Sair");
         System.out.println("--------------------------------------------------------------------------");
     }
-
 
     public static void main(String[] args) {     
         Main app = new Main();

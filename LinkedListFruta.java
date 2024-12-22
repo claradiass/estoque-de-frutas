@@ -23,11 +23,15 @@ public class LinkedListFruta {
         return ultimoMenor; // Retorna o último produto menor que o dado
     }
 
+<<<<<<< HEAD
     // Método para obter o produto em um índice específico
+=======
+>>>>>>> b4cebeb96fabf8d7a0c2ea2a1b52839e94178a31
     public Produto getProduto(int index){
         if (index < 0 || index >= count) {
             throw new IndexOutOfBoundsException("Índice inválido"); // Verifica se o índice é válido
         }
+
         int aux = 0;
         Produto auxProduto = head; // Começa do primeiro produto
         while(aux != index){ // Percorre a lista até o índice desejado
@@ -61,10 +65,17 @@ public class LinkedListFruta {
                 System.out.println("Existe");
                 return true; // Retorna true se o produto for encontrado
             }
+<<<<<<< HEAD
             auxProduto = auxProduto.getNext(); // Avança para o próximo produto
         }
         System.out.println("Não existe");
         return false; // Retorna false se o produto não for encontrado
+=======
+            auxProduto = auxProduto.getNext();
+        }
+        System.out.println("Não existe");
+        return false;
+>>>>>>> b4cebeb96fabf8d7a0c2ea2a1b52839e94178a31
     }
 
     // Método para adicionar um novo produto na lista
